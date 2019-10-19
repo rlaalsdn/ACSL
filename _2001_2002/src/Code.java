@@ -8,7 +8,7 @@ public class Code {
 	public static void main(String[] args) throws IOException {
 		Scanner in = new Scanner(new File("Code.in"));
 		
-		for(int i=0; i<=10; i++) {
+		for(int i=0; i<10; i++) {
 			int num = in.next().charAt(0) - 64;
 			
 			//A-E
@@ -41,28 +41,13 @@ public class Code {
 	}
 	
 	public static int gcf(int n) {
-		int result = 1;
-		if (n % 2 == 0) {
-			result = n/2 * 12;
-		}
-		else if (n % 5 == 0) {
-			result = n/5 * 12;
-		}
-		else if (n % 3 == 0) {
-			result = n/3 * 12;
+		for (int i = n/2; i>1;i--) {
+			if (n%i==0) {
+				return i;
+			}
 			
 		}
-		else if (n % 7 == 0) {
-			result = n/7 * 12;
-		}
-		else if (n % 11 == 0 && n != 11) {
-			result = n/11 * 12;
-		}
-		else {
-			result = n * 12;
-			
-		}
-		return result;
+		return 1;
 	}
 
 }
