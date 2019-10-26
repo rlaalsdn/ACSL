@@ -40,7 +40,15 @@ public class C1_changedigits {
 			}
 			a[index] = max;
 			
+			if (a[0]==0) {
+				String array = Arrays.toString(a);
+				System.out.println("[" + array.substring(4));
+			}
+			
+			else
+			
 			System.out.println(Arrays.toString(a));
+			
 		}
 		
 				
