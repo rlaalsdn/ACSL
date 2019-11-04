@@ -7,13 +7,15 @@ public class C1_postoffice {
 		for (int j = 1; j<=10; j++) {
 			//double next = in.nextDouble();
 			//System.out.println(next);
+			
+			
 		//input
 		double[] a = new double[3];
 		
 		for (int i = 0; i<3; i++) {
-			a[i] = in.nextDouble();
-			
+			a[i] = in.nextDouble();			
 		}
+		
 		//System.out.println(Arrays.toString(a));
 		
 		//process
@@ -68,14 +70,7 @@ public class C1_postoffice {
 			else {
 				//System.out.println(Arrays.toString(a));
 				System.out.println("Unmailable");
-			}
-				
-					
-				
-			
-				
-			
-		}
-	
+			}	
+		}	
 	}
 }
