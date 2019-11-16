@@ -26,9 +26,9 @@ public class C1_bridge {
 			System.out.println(second);
 			
 			if (str[2].equals("N")) {
-				under = 40 + ((first-1) * 30);
+				under = (40 + (first-1) * 30);
 				int diff = second - (first+6);
-				over = 40 + (diff-1) * 30;
+				over = (40 + (diff-1) * 30) - 10;
 				System.out.println(under + ", " + over);
 			}
 			else if (str[2].equals("H") || str[2].contentEquals("S")) {
