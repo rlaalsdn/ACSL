@@ -14,12 +14,13 @@ public class C1_triangles {
 			System.out.println(Arrays.toString(str));
 			
 			for (int k = 0; k<3; k++) {
-				System.out.print("[" + k + " " + str[k] + "] ");
+				//System.out.print("[" + k + " " + str[k] + "] ");
 				for (int j = 3; j<6; j++) {
-					System.out.print("(" + j + " " + str[j] + ") ");
-					if (str[k] == str[j]) {
-						System.out.println(str[k] + " " + str[j]);
+					//System.out.print("(" + j + " " + str[j] + ") ");
+					if (str[k].equals(str[j])) {
+						//System.out.println(str[k] + " " + str[j]);
 						count = count + 1;
+						str[j] = "-1";
 					}
 				}
 			}
